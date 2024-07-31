@@ -1,15 +1,17 @@
-import {Box, Alert, AlertTitle} from "@mui/material";
+import { Box } from "@mui/material";
+import Alert from "@mui/material/Alert";
+import AlertTitle from "@mui/material/AlertTitle";
 
-const Comfirmation =()=>{
-    return (
-        <Box m="90px auto" width="80%" height="50vh">
-            <Alert severity="success">
-                <AlertTitle>Success</AlertTitle>
-                Your order has been placed successfully.
-                <strong>Thank you for  Ordering with us</strong>
-            </Alert>
-        </Box>
-    )
-}
+const Confirmation = () => {
+  return (
+    <Box m="90px auto" width="80%" height="50vh">
+      <Alert severity="success">
+        <AlertTitle>Success</AlertTitle>
+        You have successfully made an Order —{" "}
+        <strong>Thank you for your Purchase. Oders on your way </strong>
+      </Alert>
+    </Box>
+  );
+};
 
-export default Comfirmation
+export default Confirmation;
